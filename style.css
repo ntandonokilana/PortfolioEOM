@@ -1,0 +1,200 @@
+nav{
+    text-align: center;
+    padding: 10px;
+}
+
+.nav {
+    background-color: #333; /* Set the background color */
+    border: 2px solid white; /* Add a white border */
+    padding: 10px; /* Add some padding to create spacing around the links */
+}
+
+.nav a {
+    color: white; /* Set the link text color to white */
+    text-decoration: none; /* Remove underline from links */
+    margin: 0 10px; /* Add spacing between the links */
+}
+
+.nav a:hover {
+    text-decoration: underline; /* Add underline on hover */
+} 
+
+section{
+scroll-margin-block: 5.9rem;
+}
+
+/* Home page*/
+
+
+h1{
+    color: whitesmoke;
+    text-align: center;
+}
+
+
+body{
+    background-image: url('https://i.postimg.cc/zvfw1b7M/spiderweb.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+    color: white;
+  }
+
+
+  /* about page */
+
+
+  h2{
+    color: whitesmoke;
+    text-align: center;
+  }
+
+
+  .aboutimg img{
+    width: 350px;
+    height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+
+/* Set the initial position of the "About" section to be off-screen */
+#about{
+    transform: translateY(100%);
+    transition: transform 0.5s;
+}
+
+
+/* When scrolling down, move the "About" section into view */
+#about.active{
+    transform: translateY(0);
+}
+
+
+/* Education page*/
+
+
+/* Set the initial position of the "education" section to be off-screen */
+#education {
+    transform: translateY(100%);
+    transition: transform 0.5s;
+}
+
+
+/* When scrolling down, move the "education" section into view */
+#education.active {
+    transform: translateY(0);
+}
+
+
+/* Add some padding to create space between the sections */
+section {
+    padding: 50px 0;
+}
+
+
+/* Education page*/
+
+
+.list-group{
+    color: black;
+}
+
+
+/* Skills page*/
+
+/* Set the initial position of the "skills" section to be off-screen */
+#skills {
+    transform: translateY(100%);
+    transition: transform 0.5s;
+}
+
+
+/* When scrolling down, move the "skills" section into view */
+#skills.active {
+    transform: translateY(0);
+}
+
+
+/* Add some padding to create space between the sections */
+section {
+    padding: 50px 0;
+}
+
+h3{
+    color: whitesmoke;
+    text-align: center;
+    width: 500px;
+}
+
+ /*For spacing */
+ .icons-imgs {
+    display: flex; 
+}
+
+.icons-imgs img {
+    margin: 10px; /* Adjust the margin as needed */
+    background-color: white;
+}
+
+/*For the white border */
+.icon-container {
+    background-color: white;
+    padding: 10px; /* Adjust the padding as needed */
+    border: 1px solid #ccc; /* Add a white border */
+}
+
+.icon-container{
+    display: grid;
+    grid-template-columns: auto auto auto ;
+    grid-template-rows: auto auto auto ;
+}
+
+.icon-container{
+    width: 300px;
+}
+
+/* Projects page*/
+
+/* Set the initial position of the "skills" section to be off-screen */
+#projects{
+    transform: translateY(100%);
+    transition: transform 0.5s;
+}
+
+/* When scrolling down, move the "skills" section into view */
+#projects.active {
+    transform: translateY(0);
+}
+
+
+/* Add some padding to create space between the sections */
+section {
+    padding: 200px 0;
+}
+
+.projects-container {
+    background-color: white;
+    padding: 10px; /* Adjust the padding as needed */
+    border: 1px solid #ccc; /* Add a white border */
+    width: 50px;
+}
+
+.projects-container{
+    display: grid;
+    grid-template-columns: auto auto auto ;
+    grid-template-rows: auto auto auto ;
+}
+
+.projects-container{
+    width: 400px;
+}  
+
+.projects-container img{
+    grid-template-columns: auto auto auto ;
+    grid-template-rows: auto auto auto ;
+    width: 00px;
+}
+
+
+
