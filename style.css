@@ -20,66 +20,84 @@ nav{
 } 
 
 section{
-scroll-margin-block: 5.9rem;
+scroll-margin-block: 5.5rem;
 }
 
 /* Home page*/
 
-
-h1{
-    color: whitesmoke;
-    text-align: center;
+#home{
+    
+    background-image: url(https://i.postimg.cc/G2SdLHvN/blackgirlintech.jpg);
+    background-repeat: no-repeat;
+    width: 100%;
+   height: 180vh;
+    background-size: cover;
 }
 
+
+.salutation{
+    font-size: 4.5rem;
+}
+
+.description{
+    font-size: 2rem;
+}
+.home-page{
+    text-align: center;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
 
 body{
     background-image: url('https://i.postimg.cc/zvfw1b7M/spiderweb.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: 100%;
-    color: white;
   }
 
 
-  /* about page */
+/* about page*/
 
-
-  h2{
-    color: whitesmoke;
-    text-align: center;
-  }
-
-
-  .aboutimg img{
-    width: 350px;
-    height: 200px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-
-/* Set the initial position of the "About" section to be off-screen */
-#about{
-    transform: translateY(100%);
-    transition: transform 0.5s;
+.img {
+    border-radius: 50%;
+    max-width: 100%;
+    height: auto;
 }
 
+#about{ 
+    color: #fff; 
+    padding: 40px 0; 
+  }
+  
+  
+  .text-white {
+    display: flex;
+    align-items: center;
+    margin-left: 650px;
+    background-color: white;
+    
+  }
 
-/* When scrolling down, move the "About" section into view */
-#about.active{
-    transform: translateY(0);
+.aboutText{
+    padding-top: 300px;
+
 }
 
-
-/* Education page*/
-
-
+/* Education Page*/
 /* Set the initial position of the "education" section to be off-screen */
 #education {
     transform: translateY(100%);
     transition: transform 0.5s;
 }
 
+.education-section {
+    border: 2px solid white;
+    padding: 20px; /* Adjust the padding as needed */
+    border-radius: 10px; /* To round the corners of the border */
+  }
 
 /* When scrolling down, move the "education" section into view */
 #education.active {
@@ -88,81 +106,81 @@ body{
 
 
 /* Add some padding to create space between the sections */
-section {
+section{
     padding: 50px 0;
 }
 
-
-/* Education page*/
-
-
-.list-group{
-    color: black;
+.list-group {
+    background-color: white;
 }
 
+.education_info{
+    color: white;
+}
 
 /* Skills page*/
 
-/* Set the initial position of the "skills" section to be off-screen */
-#skills {
+
+#skills{
     transform: translateY(100%);
     transition: transform 0.5s;
 }
 
+.skills-section {
+    border: 2px solid white;
+    padding: 20px; /* Adjust the padding as needed */
+    border-radius: 10px; /* To round the corners of the border */
+  }
 
-/* When scrolling down, move the "skills" section into view */
+/* When scrolling down, move the "education" section into view */
 #skills.active {
     transform: translateY(0);
 }
-
 
 /* Add some padding to create space between the sections */
 section {
     padding: 50px 0;
 }
 
-h3{
-    color: whitesmoke;
-    text-align: center;
-    width: 500px;
-}
-
- /*For spacing */
- .icons-imgs {
-    display: flex; 
-}
-
-.icons-imgs img {
-    margin: 10px; /* Adjust the margin as needed */
-    background-color: white;
-}
-
-/*For the white border */
+/* Custom CSS styles */
 .icon-container {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+  }
+
+  /* Style for images inside the cards */
+  .card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+
+  .skills_info{
+    color: white;
+  }
+
+ .card{
     background-color: white;
-    padding: 10px; /* Adjust the padding as needed */
-    border: 1px solid #ccc; /* Add a white border */
-}
+    width:300px;
+  }
 
-.icon-container{
-    display: grid;
-    grid-template-columns: auto auto auto ;
-    grid-template-rows: auto auto auto ;
-}
+/* Projects Page*/
 
-.icon-container{
-    width: 300px;
-}
-
-/* Projects page*/
-
-/* Set the initial position of the "skills" section to be off-screen */
+/* Set the initial position of the "projects" section to be off-screen */
 #projects{
     transform: translateY(100%);
-    transition: transform 0.5s;
-}
+    transition: transform 0.5s; 
+    height: 100vh ;
+ }
 
-/* When scrolling down, move the "skills" section into view */
+.projects-section{
+    border: 2px solid white;
+    padding: 20px; /* Adjust the padding as needed */
+    border-radius: 10px; /* To round the corners of the border */
+  }
+
+/* When scrolling down, move the "projects" section into view */
 #projects.active {
     transform: translateY(0);
 }
@@ -170,31 +188,34 @@ h3{
 
 /* Add some padding to create space between the sections */
 section {
-    padding: 200px 0;
+    padding: 50px 0;
+}
+/* 
+img[alt='Nontando']{
+    width: 300px;
+} */
+
+.projects.info{
+    color: white;
 }
 
-.projects-container {
-    background-color: white;
-    padding: 10px; /* Adjust the padding as needed */
-    border: 1px solid #ccc; /* Add a white border */
-    width: 50px;
+#testimonials{
+    transform: translateY(100%);
+    transition: transform 0.5s;
 }
 
-.projects-container{
-    display: grid;
-    grid-template-columns: auto auto auto ;
-    grid-template-rows: auto auto auto ;
+.testimonials-section {
+    border: 2px solid white;
+    padding: 20px; /* Adjust the padding as needed */
+    border-radius: 10px; /* To round the corners of the border */
+  }
+
+/* When scrolling down, move the "education" section into view */
+#testimonials.active {
+    transform: translateY(0);
 }
 
-.projects-container{
-    width: 400px;
-}  
-
-.projects-container img{
-    grid-template-columns: auto auto auto ;
-    grid-template-rows: auto auto auto ;
-    width: 00px;
+/* Add some padding to create space between the sections */
+section {
+    padding: 50px 0;
 }
-
-
-
